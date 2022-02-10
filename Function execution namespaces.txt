@@ -1,0 +1,13 @@
+# Function execution namespaces
+>>> enz = []
+>>> def add_enz(*new):
+... def verif():
+... print "enz: ", enz
+... print "new: ", new
+... verif()
+... enz.extend(list(new))
+>>> add_enz(’EcoRI’)
+enz: []
+new: (’EcoRI’,)
+>>> enz
+[ ’EcoRI’ ]
